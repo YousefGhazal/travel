@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Travel with Kaizee</title>
+
+	<!-- Style Css Link -->
+	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<!-- Style Css Link -->
+
+	<!-- Font Awesome Cdn -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+	<!-- Font Awesome Cdn -->
+
+	<!-- Google Font links -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap" rel="stylesheet">
+	<!-- Google Font links -->
+
+</head>
+
+<body>
+
+	<!-- Header Start -->
+
+	<div class="header">
+		<nav>
+
+			<input type="checkbox" id="show-search">
+			<input type="checkbox" id="show-menu">
+			<label for="show-menu" class="menu-icon"><i class="fas fa-bars"></i></label>
+
+			<div class="content">
+
+				<div class="logo">
+					<div class="logo"><a href="index.html"><img src="logo.png" alt=""></a></div>
+				</div>
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="#services">Services</a></li>
+					<li><a href="#about">About</a></li>
+					<li><a href="#packages">Packages</a></li>
+					<li><a href="#book">Book</a></li>
+					<li><a href="#reviews">Reviews</a></li>
+					<li><a href="#contact">Contact</a></li>
+				</ul>
+			</div>
+			<label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>
+			<form action="#" class="search-box">
+				<input type="text" placeholder="Search" required>
+				<button type="submit" class="go-icon"><i class="fas fa-long-arrow-alt-right"></i></button>
+			</form>
+
+
+		</nav>
+	</div>
+</body>
+
+</html>
