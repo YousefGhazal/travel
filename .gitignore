@@ -1,0 +1,6 @@
+.env
+*.pyc
+/venv/
+db.sqlite3
+todo.txt
+/frontend/
