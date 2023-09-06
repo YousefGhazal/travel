@@ -1,4 +1,5 @@
 {% load static %}
+{% include "main/nav.html" %}
     <!-- Section Reviews Start -->
     <section class="reviews" id="reviews">
         <div class="main-txt">
@@ -6,7 +7,7 @@
         </div>
         <div class="card-content">
             <div class="row">
-                <h5><img src="pic-1.png" alt="">Matthieu Dervillez</h5>
+                <h5><img src="{% static 'main/images/pic-1.png' %}" alt="">Matthieu Dervillez</h5>
                 <!-- 5-star rating -->
                 <div>
                     <span class="fa fa-star" style="color: rgb(248, 202, 22);"></span>
@@ -19,7 +20,7 @@
 
             </div>
             <div class="row">
-                <h5><img src="pic-2.png" alt="">Clara Rosa</h5>
+                <h5><img src="{% static 'main/images/pic-2.png' %}" alt="">Clara Rosa</h5>
                  <!-- 5-star rating -->
                  <div>
                     <span class="fa fa-star" style="color: rgb(248, 202, 22);"></span>
@@ -32,7 +33,7 @@
 
             </div>
             <div class="row">
-                <h5><img src="pic-3.png" alt="">Matias Galland</h5>
+                <h5><img src=" {% static 'main/images/pic-3.png' %}" alt="">Matias Galland</h5>
                  <!-- 5-star rating -->
                  <div>
                     <span class="fa fa-star" style="color: rgb(248, 202, 22);"></span>
@@ -47,4 +48,6 @@
         </div>
     </section>
     <!-- Section Reviews End -->
+    {% include "main/footer.html" %}
+
 

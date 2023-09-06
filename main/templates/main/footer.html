@@ -1,37 +1,30 @@
 {% load static %}
 <footer id="footer">
-    <div class="footer-content">
-        <div class="row" id="row1">
-            <a href="#" id="footer-logo">Travel Agency</a>
-            <p>Our mission is to make booking your business trip or vacation as easy and enjoyable as possible.</p>
-            <div class="socail-links">
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-pinterest-p"></i>
+        <div class="footer-content">
+            <div class="row" id="row1">
+                <a href="#" id="footer-logo">Travel Agency</a>
+                <p>Our mission is to make booking your business trip or vacation as easy and enjoyable as possible.</p>
+            </div>
+            <div class="row" id="row2">
+                <h3>UseFull Links</h3>
+                <ul>
+                    <li><a href="{% url 'home' %}">Home</a></li>
+                    <li><a href="{% url 'city' %}">Packages</a></li>
+					<li><a href="{% url 'gallery' %}">Gallery</a></li>
+                    <li><a href="{% url 'about' %}">About us</a></li>
+                    <li><a href="{% url 'contactus' %}">Contact us</a></li>
+                </ul>
+            </div>
+            <div class="row" id="row3">
+                <h3>Other Links</h3>
+                <ul>
+                    <li><a href="#">Term & Condition</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="row" id="row4">
+                <h3>Download App</h3>
+                <img src="{% static 'main/images/app.png' %}" alt="">
             </div>
         </div>
-        <div class="row" id="row2">
-            <h3>UseFull Links</h3>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Packages</a></li>
-                <li><a href="#">Book</a></li>
-                <li><a href="#">About us</a></li>
-                <li><a href="#">Contact us</a></li>
-            </ul>
-        </div>
-        <div class="row" id="row3">
-            <h3>Other Links</h3>
-            <ul>
-                <li><a href="#">Term & Condition</a></li>
-                <li><a href="#">Privacy Policy</a></li>
-            </ul>
-        </div>
-        <div class="row" id="row4">
-            <h3>Download App</h3>
-            <img src="app.png" alt="">
-        </div>
-    </div>
-</footer>
+    </footer>

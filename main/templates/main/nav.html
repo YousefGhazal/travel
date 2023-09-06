@@ -8,7 +8,7 @@
 	<title>Travel with Kaizee</title>
 
 	<!-- Style Css Link -->
-	<link rel="stylesheet" href="{% static 'style.css' %}">
+	<link rel="stylesheet" href="{% static 'main/css/style.css' %}">
 	<!-- Style Css Link -->
 
 	<!-- Font Awesome Cdn -->
@@ -37,16 +37,16 @@
 			<div class="content">
 
 				<div class="logo">
-					<div class="logo"><a href="index.html"><img src="logo.png" alt=""></a></div>
+					<div class="logo"><a href="index.html"><img src= "{% static 'main/images/logo.png' %}" alt=""></a></div>
 				</div>
 				<ul class="links">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="#services">Services</a></li>
-					<li><a href="#about">About</a></li>
-					<li><a href="#packages">Packages</a></li>
-					<li><a href="#book">Book</a></li>
-					<li><a href="#reviews">Reviews</a></li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a href="{% url 'home' %}">Home</a></li>
+					<li><a href="{% url 'gallery' %}">Gallery</a></li>
+					<li><a href="{% url 'services' %}">Services</a></li>
+					<li><a href="{% url 'about' %}">About</a></li>
+					<li><a href="{% url 'city' %}">Packages</a></li>
+					<li><a href="{% url 'reviews' %}">Reviews</a></li>
+					<li><a href="{% url 'contactus' %}">Contact</a></li>
 				</ul>
 			</div>
 			<label for="show-search" class="search-icon"><i class="fas fa-search"></i></label>

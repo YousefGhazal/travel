@@ -1,16 +1,18 @@
 {% load static %}
-    <!-- About Section Start -->
-    <section class="about" id="about">
-        <div class="about-img">
-            <img src="about-img.png" alt="">
-        </div>
-        <div class="about-info">
-            <h6>About us</h6>
-            <h3>How Work This Travel Agency</h3>
-            <p>We've brought all the elements of travel together in one all-in-one platform. From booking to management, travel has never been easier. Get on board!<br> <br> exclusive fares, earn loyalty points and benefit from free 24,7 assistance from CWT, the leader in travel management.</p>
+{% include "main/nav.html" %}
+<!-- About Section Start -->
+<section class="about" id="about">
+    <div class="about-img">
+        <img src="{% static 'main/images/about-img.png' %}" alt="">
+    </div>
+    <div class="about-info">
+        <h6>About us</h6>
+        <h3>How Work This Travel Agency</h3>
+        <p>We've brought all the elements of travel together in one all-in-one platform. From booking to management,
+            travel has never been easier. Get on board!<br> <br> exclusive fares, earn loyalty points and benefit from
+            free 24,7 assistance from CWT, the leader in travel management.</p>
+    </div>
+</section>
+<!-- About Section End -->
 
-            <button class="about-btn">Read More...</button>
-        </div>
-    </section>
-    <!-- About Section End -->
-
+{% include "main/footer.html" %}

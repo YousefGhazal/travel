@@ -3,13 +3,13 @@ from django.db import models
 
 # Create your models here.
 class Gallery(models.Model):
-    img = models.ImageField()
+    img = models.ImageField(default="p1.jpg")
 
 
 class City(models.Model):
     name = models.CharField(max_length=50)
     des = models.TextField()
-    img = models.ImageField()
+    img = models.ImageField(default="p1.jpg")
 
     def __str__(self) -> str:
         return self.name
@@ -17,7 +17,7 @@ class City(models.Model):
 
 class Hotel(models.Model):
     name = models.CharField(max_length=50)
-    img = models.ImageField()
+    img = models.ImageField(default="p1.jpg")
     price = models.CharField(max_length=50)
     des = models.TextField()
     city = models.ForeignKey(City, on_delete=models.CASCADE)
